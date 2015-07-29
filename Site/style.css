@@ -1,0 +1,194 @@
+html,body
+{
+	margin:0;
+	padding:0;
+	font-family:Fonterinio;
+}
+
+@font-face
+{
+	font-family:Fonterinio;
+	src:url(fonts/font.ttf);
+}
+
+body
+{
+	background-color:black;	
+}
+
+header
+{
+	z-index: 1111;
+	position:fixed;
+	font-weight:bold;
+	letter-spacing:5px;
+	width:100%;
+	top:0;
+	font-size:200%;
+	margin-bottom:30px;
+	 background-color:#383838  ;
+	 box-shadow: 0px 2px 20px 1px rgba(1,1,1,1);
+	 color:white;
+	 text-align:center;
+	 padding-top:10px;
+	 padding-bottom:10px;
+	 
+}
+
+footer
+{
+	position:fixed;
+	bottom:0;
+	z-index: 1111;
+	font-size:150%;
+	background-color:#383838  ;
+	 box-shadow: 0px 2px 20px 1px rgba(1,1,1,1);
+	 color:white;
+	 text-align:right;
+	 margin-left:-10px;
+	 padding-right:10px;
+	 padding-bottom:10px;
+	 padding-top:20px;
+	 width:100%;
+}
+
+.intr
+{
+	font-size:200%;
+	padding:10px;
+}
+
+input.radio
+{
+	cursor:pointer;
+	width:1rem;
+	height:1rem;
+	display:inline-block;
+}
+
+#bg 
+{
+	transition: 2s all;
+	width: 100%;
+	height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+	z-index:-100;
+	opacity: 1;
+animation: bgmove 3s infinite;
+-webkit-animation: bgmove 3s infinite;
+animation-timing-function:ease;
+-webkit-animation-timing-function:ease;
+}
+
+@-webkit-keyframes bgmove {
+    0% {opacity: 1;}
+    50% {opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.content
+{
+	color:white;
+	position:relative;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:20px;
+	margin-top:20px;
+	background-color:rgba(0,0,0,0.7);
+	box-shadow: 5px 5px 20px 7px rgba(0,0,0,0.5);
+	transition: all 1s;
+
+}
+
+#mare
+{
+	position:absolute;
+	top:-70%;
+	opacity:0;
+	width:100%;
+	margin-top:100px;
+	transition: all 1s;
+	letter-spacing:5px;
+}
+
+#mare.active
+{	
+	top:0%;
+	opacity:1;
+	transition: all 1s;
+}
+
+#lastonemf
+{
+	margin-bottom:100px;
+}
+
+#verifica
+{
+	position:absolute;
+	text-align:center;
+	top:-50%;
+	font-size:300%;
+	color:white;
+	left:83%;
+	box-shadow: 2px 2px 20px 1px rgba(0,0,0,0.5);
+	background-color:red;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:7px;
+	padding-bottom:7px;
+	z-index:10001;
+	opacity:0;
+	cursor:pointer;
+	transition:all .5s;
+}
+
+#verifica:hover
+{
+	background-color:green;
+}
+
+#verifica.active
+{
+	opacity:1;
+	top:0;
+}
+
+#scor
+{
+	color:white;
+	position:absolute;
+	width:100%;
+	text-align:center;
+	font-size:500%;
+	padding-bottom:20px;
+	background-color:rgba(0,0,0,0.7);
+	box-shadow: 5px 5px 20px 7px rgba(0,0,0,0.5);
+	top:-50%;
+	opacity:0;
+	transition: all 1s;
+}
+
+#scor.active
+{
+	top:30%;
+	opacity:1;
+}
+
+#refresh
+{	
+   	width: 200px;
+	height: 200px;
+	margin:auto;
+	transform:rotate(20deg);
+	cursor:pointer;
+	transition: all 1s ;
+}
+
+#refresh:hover
+{
+	transform:rotate(180deg);
+	transition: all 1s ;
+}
